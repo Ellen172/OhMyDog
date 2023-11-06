@@ -1,0 +1,85 @@
+:root {
+	--roxo01: #6F0A65;
+	--roxo02: #CEB1CC;
+	--roxo03: #EFCAFC;
+	--roxo04: #FFEAFF;
+	--cinza-transparente: rgba(0,0,0,0.25);
+}
+
+body {
+	background-image: url("../images/fundo-animal.png");
+	background-color: var(--roxo04);
+	margin: 0;
+}
+
+.body-center {
+	background-color: white;
+	margin: 0 330px 0 330px;
+}
+
+.body-header{
+	display: grid;
+	grid-template-areas:
+		"image-logo" 
+		"busca-cidade";
+	justify-content: center;
+}
+
+.div-image-logo{
+	grid-area: image-logo;
+	width: 100%;	
+	display: flex;
+	justify-content: center;
+}
+
+.img-main-logo {
+	width: 320px;
+}
+
+
+.div-busca {
+	grid-area: busca-cidade;
+	display: flex;
+	justify-content: space-around;
+	width: 920px;
+	height: 45px;
+	border-radius: 15px;
+	border: 1px solid black;
+	box-shadow: inset 0 0 3px 1px var(--cinza-transparente);
+}
+
+.div-busca-focus {
+	border: 2px solid var(--roxo01);
+	box-shadow: 0 0 3px 1px var(--roxo02);
+}
+
+.input-busca-cidade {
+	width: 100%;
+	border: none;
+	background: transparent;
+	padding: 10px;
+}
+
+.input-busca-cidade:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.img-icone-busca {
+	width: 45px;
+	height: 45px;
+	margin: 0 10px;
+}
+
+.footer {
+	padding: 20px 0 10px 0;
+}
+
+.footer-assinatura {
+	text-align: end;
+	padding: 0 10px;
+	font-size: 0.7em;
+	font-style: italic;
+	color: gray;
+}
